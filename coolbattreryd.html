@@ -38,7 +38,7 @@
 
     async function start() {
       // Load face detection model
-      await faceapi.nets.tinyFaceDetector.loadFromUri('https://justadudewhohacks.github.io/face-api.js/models');
+      await faceapi.nets.tinyFaceDetector.loadFromUri('https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js');
       // Start webcam
       navigator.mediaDevices.getUserMedia({ video: true })
         .then(stream => { video.srcObject = stream; });
